@@ -1,0 +1,12 @@
+Player-Required: "You are console! This command requires a player"
+Player-Not-Found: "{player} was not found!"
+Stats-Console: "You need to enter a player name. Ex /stats sysupdate"
+Chest-Spawn-Only: "Chest can only be accessed while in spawn."
+Stats: |
+  &m&l&6------------------------------------
+  &eStats for: &6{player}
+  &eKills: &6{kills}
+  &eDeaths: &6{deaths}
+  &eKillstreak: &6{killstreak}
+  &eHighest Killstreak: &6{highestKillstreak}
+  &m&l&6------------------------------------

@@ -1,0 +1,42 @@
+name: ${project.name}
+version: ${project.version}
+author: DoctorDark
+authors: [DoctorDark, SystemUpdate, ItsMonkey, Joseph Hirschfeld, Sam (l0l)]
+main: com.doctordark.hcf.HCF
+depend: [Base, Essentials, ProtocolLib, WorldEdit, Vault, PermissionsEx]
+commands:
+  togglepm: {}
+  endevent: {}
+  conquest: {}
+  economy:
+    aliases: [eco, econ, bal, balance]
+  eotw: {}
+  event: {}
+  koth: {}
+  lives: {}
+  savedata: {}
+  logout: {}
+  mapkit: {}
+  pay: {}
+  pvptimer:
+    aliases: [pvp]
+  sotw: {}
+  revive:  {}
+  freezeserver: {}
+  timer: {}
+  nightvision:
+    aliases: [nv]
+  playertime:
+    aliases: [ptime, playtime]
+  inv:
+    aliases: [invrestore, restoreinv, restore, return]
+  fury: {}
+  toggleend: {}
+  list:
+    aliases: [online, who]
+  ores: {}
+  blockfilter: {}
+  focus: {}
+  loadout:
+    aliases: ["setloadout"]
+  mountain: {}

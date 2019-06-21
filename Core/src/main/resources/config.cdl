@@ -1,0 +1,214 @@
+// iHCF Configuration File
+// This is in a new custom format **NOT YAML**
+// Be sure to double-check your config
+// Credits - Techcable's Configuration API
+
+// If the plugin should attempt to limit entities to reduce lag.
+// currently what this does is allow only 50 entities in one chunk.
+handleEntityLimiting = true
+
+// If arrows shot from a bow with infinity should be removed
+// when they land to reduce entity lag.
+removeInfinityArrowsOnLand = true
+
+// The maximum Beacon strength level
+beaconStrengthLevelLimit = 1
+
+// If boats should not be allowed to be placed on land.
+disableBoatPlacementOnLand = true
+
+// If enderchests should be disabled.
+disableEnderchests = true
+
+// If beds cannot be placed in the Nether.
+preventPlacingBedsNether = true
+
+// Timezone to use for events and stuff
+serverTimeZone = EST
+
+// The speed at which items in furnaces cook, set to 1.0 for default.
+furnaceCookSpeedMultiplier = 6.0
+
+// The speed at which items in brewing stands brew, set to 0 for default.
+potionBrewSpeedMultiplier = 6
+
+// If you should be able to bottle exp by crafting a glass bottle.
+bottledExp = true
+
+// If you should be able to de-enchant books by right clicking enchant tables.
+bookDeenchanting = true
+
+// If death signs should spawn upon deaths.
+deathSigns = true
+
+// If death signs should thaw upon deaths.
+deathLightning = true
+
+// The current number of the map.
+mapNumber = 1
+
+// If the server is in a kit map mode.
+kitMap = false
+
+//Should print out "missing message"
+//Only recommend to use on test server
+//to reduce spam.
+messageDebug = false
+
+// Enable crafting of glistering melons
+// using only a single golden nugget
+cheapGlisteringMelon = true
+
+economy {
+    // The amount of money a player starts off with.
+    startingBalance = 250
+}
+
+spawners {
+    // If players should not be able to break spawners in the Nether.
+    preventBreakingNether = true
+
+    // If players should not be able to place spawners in the Nether.
+    preventPlacingNether = true
+}
+
+expMultiplier {
+    // The multipliers to set for experience, set to 1.0 to normalise as vanilla.
+    global = 2.0
+    fishing = 2.0
+    smelting = 2.0
+    lootingPerLevel = 1.5
+    luckPerLevel = 1.5
+    fortunePerLevel = 1.5
+}
+
+scoreboard {
+    sidebar {
+        // The title of the sidebar, use {MAP_NUMBER} as a
+        // placeholder with & as colour codes.
+        title = "&a&lHCF &c[Map {MAP_NUMBER}]"
+
+        // If this plugin utilises the sidebar.
+        enabled = true
+    }
+
+    nametags {
+        // If this plugin will utilise nametags.
+        enabled = true
+    }
+}
+
+combatlog {
+    // If this plugin will protect from combat-logging.
+    enabled = true
+
+    // The ticks for when a combat logger NPC should despawn.
+    despawnDelayTicks = 600
+}
+
+conquest {
+    // How much points should a faction lose when a player dies in Conquest.
+    pointLossPerDeath = 20
+
+    // How much points should a faction need to win Conquest.
+    requiredVictoryPoints = 300
+
+    // If negative points are possible during conquest.
+    allowNegativePoints = true
+}
+
+fury {
+    // How much points should a faction lose when a player dies in Fury.
+    pointLossPerDeath = 20
+
+    // How much points should a faction need to win Fury.
+    requiredVictoryPoints = 300
+
+    // If negative points are possible during Fury.
+    allowNegativePoints = true
+}
+
+deathban {
+    // The regular deathban duration.
+    baseDurationMinutes = 60
+
+    // The seconds before kicking after showing the user
+    // the respawn screen from a deathban.
+    respawnScreenSecondsBeforeKick = 15
+}
+
+end {
+    // If the end should be opened.
+    open = true
+
+    // The location of the spawn point when leaving end by End Portal.
+    exitLocation = "world,0.5,75,0.5,0,0"
+
+    // The location of the spawn point when entering end by End Portal.
+    entranceLocation = "world_the_end,0.5,75,0.5,0,0"
+
+    // If fire should be extinguished when leaving the end through an End Portal.
+    extinguishFireOnExit = true
+
+    // If strength should be removed when entering the end through an End Portal.
+    removeStrengthOnEntrance = true
+}
+
+// The maximum levels an enchantment can be.
+enchantmentLimits = [
+    "PROTECTION_ENVIRONMENTAL = 3",
+    "PROTECTION_FIRE = 3",
+    "SILK_TOUCH = 1",
+    "DURABILITY = 3",
+    "PROTECTION_EXPLOSIONS = 3",
+    "LOOT_BONUS_BLOCKS = 3",
+    "PROTECTION_PROJECTILE = 3",
+    "OXYGEN = 3",
+    "WATER_WORKER = 1",
+    "THORNS = 0",
+    "DAMAGE_ALL = 3",
+    "ARROW_KNOCKBACK = 1",
+    "KNOCKBACK = 1",
+    "FIRE_ASPECT = 1",
+    "LOOT_BONUS_MOBS = 3",
+    "LUCK = 3",
+    "LURE = 3"
+]
+
+// The maximum levels a potion can be brewed to.
+potionLimits = [
+    "STRENGTH = 0",
+    "INVISIBILITY = 0",
+    "REGEN = 0",
+    "WEAKNESS = 0",
+    "INSTANT_DAMAGE = 0",
+    "SLOWNESS = 1",
+    "POISON = 1"
+]
+
+// Disallowed extended durations for those potions
+potionsExtendedDisallowed = [
+    "POISON",
+    "SLOWNESS"
+]
+
+data{
+    //Either FLATFILE or MONGO
+    lives = "FLATFILE"
+    users = "FLATFILE"
+    economy = "FLATFILE"
+
+    mongo{
+        //Connection information for connecting to mongo
+        address = "127.0.0.1"
+        port = 27017
+
+        //Authorization for connecting
+        username = "core"
+        password = "password"
+        auth = false
+
+        //Database to use
+        database = "core"
+    }
+}

@@ -1,0 +1,120 @@
+factions:
+  chat: "{relationColour}({channelName}) {player}: {message}"
+  antirotation: "&cYou cannot join the faction as you are on a 6 hour cooldown period. Please wait {time} to join."
+  show:
+    playerfaction:
+      top: |
+        {factionName} ({factionMembersOnline}/{factionMembersTotal})
+        Home: {home} | Open: {factionOpenStatus}
+      allies: "Allies: {allies}"
+      leader: "Leader: {leader}"
+      coleaders: "Co-Leaders: {coleaders}"
+      captains: "Captains: {captains}"
+      members: "Members: {members}"
+      announcement: "News: {announcement}"
+      lives: "Faction lives: {lives}"
+      bottom: |
+        Balance: ${balance} | Kills: {kills}
+        Founded: {founded}
+        DTR: {factionDeathsUntilRaidable}/{maximumDeathsUntilRaidable}
+      regen: "Regeneration: {factionRegenTime}"
+      parts:
+        ally_format: "{allyName} ({allyMembersOnline}/{allyMembersTotal}"
+        member_format: "{player}[{playerKills}]"
+        home_format:
+          none: "None"
+          set: "{factionHomeX}, {factionHomeX}"
+        openstatus:
+          open: "Open"
+          closed: "Closed"
+    claimable:
+      top: |
+        {factionName}:
+      claim_format: "Location: ({environment}, {locX} | {locY})"
+  claiming:
+    wand:
+      item:
+        name: "Claim Wand"
+        lore:
+        - lalal do something
+        - with this to claim
+        - :)
+      cleared: "You have cleared your claim selection."
+      need_both_position: "You have not set both positions of this claim selection."
+      set: "Set the location of the claim selection {selectionId} to: ({blockX}, {blockZ})"
+      selection_cost: "Claim selection cost {canAffordColour}{selectionPrice}. Current size: ({claimWidth}, {claimLength}) {claimArea} blocks."
+    overworld_only: "You can only claim in the overworld."
+    wilderness_only: "You can only claim in the {wildernessColour}wilderness. Make sure you are past {warzoneRadius} blocks from spawn."
+    faction_required: "You need to be in a faction to be able to claim."
+    officer_required: "You must be a officer or higher to claim land."
+    max_claims_reached: "Your faction has hit the maximium claims, which is {maxClaims}."
+    enemy_claims_nearby: "This position contains enemy claims within a {radius} block buffer radius."
+    insufficient_funds: "Your faction bank has only {factionBalance}, the price of this claim is {claimPrice}."
+    too_many_chunks: "Claims cannot exceed {maxChunks} chunks."
+    not_wide_enough: "Claims must be at least {minClaimRadius} x {maxClaimRadius} blocks."
+    claim_part_in_wilderness: "This claim contains a part not within the wilderness."
+    claims_must_be_conjoined: "All claims in your faction must be conjoined."
+    purchased: "Claim has been purchased for {claimPrice}."
+    purchased_broadcast: "{player} claimed land for your faction at ({claimX}, {claimZ})."
+    home_unset: "Your hcfactions' home was unset as its residing claim was removed."
+    refund_broadcast: "Faction leader was refunded {amount} due to a land unclaim."
+  subclaims:
+    already_exists: "There is already a {subclaimName} subclaim sign on this {block}."
+    members_required: "Subclaim signs need to have at least 1 player name inserted."
+    officer_required: "Only faction officers or higher can create captain subclaimed objects."
+    leader_required: "Only faction leaders can create leader subclaimed objects."
+    created_broadcast: "{teammateRelationColour}{player} has created a subclaim on block type {block}, at ({blockX}, {blockZ}) for "
+    cannot_break: "You cannot break this subclaimed {block}."
+    no_access: "You do not have access to this subclaimed {block}."
+  protection:
+    teleport_spawn_safezone: "You were teleported to the spawn of target world as you were in a safe-zone."
+    portal_creation_cancelled: "Portal would have created portal in territory of {faction}."
+    cannot_attack_in_safezone: "You cannot attack players whilst in safe-zones."
+    cannot_attack_players_in_safezone: "You cannot attack players that are in safe-zones."
+    attack_faction_member: "{teammateColour}{player} is in your faction."
+    attack_ally_cancelled: "{allyColour}{player} is an ally."
+    attack_ally: "Careful! {allyColour}{player} is an ally."
+    cannot_interact: "You cannot do this in the territory of %1$s"
+    cannot_build: "You cannot build in the territory of %1$s"
+    steal_horse: "You cannot enter a Horse that belongs to {player}."
+    cannot_build_end: "You cannot build in the end."
+    cannot_build_system_faction: "You cannot build in the {faction}."
+    cannot_enter_vehicle: "You cannot enter vehicles in the territory of %1$s"
+
+commands:
+  error:
+    player_only: "This command can only be executed via a player."
+    console_only: "This command can only be executed from the console."
+    faction_not_found: "Faction {0} not found."
+    member_not_found: "Faction member with name {0} not found."
+    usage: "Usage: {0}"
+  staff:
+    ban:
+      usage: "/{0} {1} <factionName> <time:(e.g. 1h2s)> <reason>"
+      executing: "Executing {0}"
+      executed: "Executed ban action on faction {0}"
+    claimfor:
+      usage: "/{0} {1} <factionName>"
+      worldedit_required: "WorldEdit must be installed to set claim areas."
+      worldedit_selection_required: "You must make a WorldEdit selection to do this."
+      claimed: "Successfully claimed land for {0}."
+    clearclaims:
+      usage: "/{0} {1} <playerName|factionName|all>"
+      cleared_faction_broadcast: "Your claims have been forcefully wiped by {0}."
+      cleared: "Claims belonging to {0} have been wiped."
+      console_prompt:
+        prompt: "Are you sure you want to do this? All claims will be cleared.\nType yes to confirm or no to deny."
+        cleared: "All claims have been cleared{0}."
+        cancelled: "Cancelled the process of clearing all faction claims."
+        cancelled_unknown: "Unrecognized response. Process of clearing all faction claims cancelled."
+    forcedemote:
+      usage: "/{0} {1} <playerName>"
+      leader_demote: "{0} is a leader and cannot be demoted."
+      user_demote: "{0} is already a member and cannot be demoted any more."
+      demote_broadcast: "{0} has been demoted to {1}"
+  snow:
+    own: "You have {0} snowing in your faction."
+    other: "You have {0} snowing for {1}"
+  pastfactions:
+    own: "Your past factions: {0}"
+    other: "Past factions of {0}: {1}"

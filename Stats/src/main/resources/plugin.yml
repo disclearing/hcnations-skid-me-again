@@ -1,0 +1,4 @@
+name: ${project.artifactId}
+version: ${project.version}
+author: SystemUpdate
+main: ${project.groupId}.${project.artifactId}

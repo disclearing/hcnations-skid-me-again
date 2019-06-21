@@ -1,0 +1,139 @@
+error:
+  number_too_small: "Number must be greater then 0"
+  invalid_number: "{0} is an invalid number."
+  player_not_found: "{0} was not found."
+  invalid_state: "{0} is an invalid state."
+  no_permission: "&cYou don't have permission to perform this action."
+  player_only: "This action can only be performed by a player."
+
+lock:
+  enabled: "{0} has locked the chat."
+  disabled: "{0} has unlocked the chat."
+  cancelled: "Chat is currently locked."
+
+slow:
+  enabled: "{0} has slowed the chat."
+  disabled: "{0} has unslowed the chat"
+  usage: "/slow <delay in seconds>"
+  set: "You have set the chat delay to {0}{1}."
+  cancelled: "Chat is currently slowed.. You can type again in {0} second{1}"
+
+vanish:
+  cannot_interact: "You cannot interact while vanished."
+  silent_open: "Silently opening chest..."
+
+chat:
+  clearchat: "Chat has been cleared by {0}."
+  staffchat: "&b{0}: {1}"
+
+freeze:
+  cannot_interact: "You cannot interact while frozen."
+  cannot_teleport: "You cannot teleport while frozen."
+  alert:
+    login_frozen: "{0} has logged in while frozen."
+    logout_frozen: "{0} has logged out while frozen."
+
+commands:
+  vanish:
+    invalid_usage: "Invalid Usage: /vanish <player> <on, off>"
+    no_permission_other: "You don't have permission to vanish others."
+    enabled: "Vanish enabled."
+    disabled: "Vanish disabled."
+    other: "You have {0} vanish for {1}."
+  ghostmute:
+    usage: "Invalid Usage: /ghostmute <player>"
+    enabled: "{0} is now ghost muted."
+    disabled: "{0} is no longer ghost muted."
+  staffchat:
+    usage: "Usage: /staffchat <message>"
+  freeze:
+    usage: "/freeze <player>"
+    cannot_freeze: "You don't have permission to freeze {0}."
+    frozen: "You are now frozen! Don't logout, ts.hcgames.org, you have 5 minutes."
+    unfrozen: "You are no longer frozen, fuck off."
+    frozen_user: "You have frozen {0}"
+    frozen_user_normal: "Removed inventory lock on {0}"
+    unfrozen_user: "You have unfrozen {0}"
+  invsee:
+    usage: "/invsee <player>"
+    opened: "Viewing inventory of {0}."
+
+Messages-Error-InvalidNumber: "'{number}' is an invalid number."
+Messages-Error-NoPermission: "You don't have permission to perform this action."
+Messages-Go-Teleporting: "You are being teleported to {player}..."
+Messages-NoPermission: "You don't have permission to perform this action."
+Messages-InvalidNumber: "'{number}' is an invalid number."
+Messages-PlayerOnly: "This command is only executable by a player."
+Messages-InvalidPlayer: "Player {player} cannot be found."
+Commands-Commands-InvalidUsage: "Usage: /command <player> <page#>"
+Commands-Commands-PlayerNotFound: "{player} was not found."
+Commands-Commands-NoCommands: "No command have been logged for {player}."
+Commands-Commands-NoSuchPage: "Page {page} does not exist."
+Commands-Commands-Header: |
+  *** {player} Commands ***
+  Page {currentPage}/{totalPages}
+Commands-Commands-Item: ">> {command}"
+Commands-Commands-Footer: |
+  You are on page {currentPage}.
+  To view additional pages, type /commands {player} <page#>
+Commands-Go-Usage: "Usage: /go <toggle/time>"
+Commands-Go-Toggled: "Go has been {toggleState}."
+Commands-Go-ToggledPaused: "paused"
+Commands-Go-ToggledUnPaused: "unpaused"
+Commands-Go-Enabled: "Go has been enabled. You will be automatically teleported to new players. (Every {time} second{s})"
+Commands-Go-Disabled: "Go has been disabled. No longer teleporting to new players."
+Commands-Go-AlreadyEnabled: "You already have Go enabled."
+Commands-Go-TimeMustBeAboveZero: "The time must be above 0."
+Commands-Go-ToggleNotInGo: "You must be in Go to be able to pause or resume it."
+Commands-Go-Toggled: "Go has been temporarily {toggleState}"
+Commands-Go-ToggleEnable: "enabled."
+Commands-Go-ToggleDisable: "disabled. To re-enable type /go toggle"
+Commands-Go-TimeTooLong: "Your time {number} exceeds the maximum {maxTime}."
+Commands-Invsee-InvalidUsage: "Invalid Usage, /invsee <username>"
+Commands-Invsee-InvalidPlayer: "Player {name} cannot be found."
+Commands-Invsee-CannotBeInvseed: "You cannot invsee {player}."
+Commands-Invsee-Opening: "Opening inventory of {player}"
+Commands-Invsee-PotionLoreItem: "Potion: {potionEffect}, Level {potionLevel}"
+Commands-Vanish-InStaffMode: "Cannot toggle out of vanish while in staff mode."
+Commands-Vanish-InStaffModeOther: "{player} cannot be toggled out of vanish while in staff mode."
+Commands-Staff-CannotToggleOthers: "You don't have permission to toggle others."
+Commands-Staff-InvalidPlayer: "Player {player} cannot be found."
+Commands-Staff-PlayerRequiredConsole: "Player name required. (/staff <player>)"
+Commands-Staff-Toggled: "Staff mode has been {state}."
+Commands-Staff-ToggledOther: "Staff mode has been {state} for {player}."
+Commands-Staff-StateEnabled: "enabled"
+Commands-Staff-StateDisabled: "disabled"
+Commands-Freeze-InvalidPlayer: "Player {player} cannot be found."
+Commands-Freeze-InvalidUsage: "Invalid Usage: /{commandLabel} <player>"
+Commands-Freeze-FrozenPlayer: "You have {state} {player}."
+Commands-Freeze-FrozenState: "frozen"
+Commands-Freeze-UnFrozenState: "unfrozen"
+Commands-Freeze-Frozen: "You are now frozen! Don't move an inch"
+Commands-Freeze-UnFrozen: "You are no longer frozen!"
+Commands-Freeze-CannotFreezePlayer: "You cannot freeze that player."
+Commands-Confirmclear-NoPendingClear: "No pending clear.."
+Commands-Confirmclear-Cleared: "You have cleared {player}'s inventory"
+Commands-Report-InvalidUsage: "Invalid Usage - /report {player} {reason}"
+Commands-Report-Sent: "Report has been sent to staff members."
+Commands-Report-Cooldown: "Please wait {time}s before sending another report"
+Commands-Report-AlreadyReportedSelf: "You have already reported yourself."
+Commands-Report-Broadcast: |
+  New Report! (#{report-id})
+  By: {reporter}
+  About: {player}
+  Reason: {reason}
+Commands-ViewReports-Opening: "Opening reports.. (Page #{page})"
+Commands-ViewReports-InvalidPage: "Invalid page number.. (Max: {maxPages})"
+Commands-ViewReports-NoReports: "No reports."
+Interaction-StaffMode-InvOpen: "Opening {player}'s inventory."
+Interaction-StaffMode-RandomTeleport: "You are being teleported to {player}."
+Interaction-StaffMode-BlockPlace: "You cannot break blocks while in staff mode."
+Interaction-StaffMode-BlockBreak: "You cannot place blocks while in staff mode."
+Interaction-StaffMode-ShearEntity: "You cannot shear entities while in staff mode."
+Interaction-StaffMode-BucketFill: "You cannot fill buckets while in staff mode."
+Interaction-StaffMode-PotionThrow: "You cannot throw potions while in staff mode."
+Interaction-Invsee-Clear: |
+  You have attempted to clear {player}'s inventory.
+  Please type /confirmclear within {time} second{s} to
+  clear their inventory.
+Interaction-ViewReports-Teleport: "You are being teleported to {player}"

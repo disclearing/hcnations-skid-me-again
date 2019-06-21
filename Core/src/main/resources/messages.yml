@@ -1,0 +1,400 @@
+Commands-ConsoleOnly: '&cThis command is only executable by players.'
+Commands-Usage: '&cIncorrect usage: {usage}'
+Commands-Invalid-Number: '&cInvalid number. Please specify a positive number.'
+Commands-Unknown-Subcommand: '&cInvalid commmand/sub-command. Please try again.'
+Commands-Factions-Global-UnknownFaction: '&c"{factionName}" could not be found.'
+Commands-Factions-Global-NotInFaction: '&cNo faction was found.'
+Commands-Factions-Accept-InFactionAlready: '&cYou are already in a faction. To accept,
+  you must leave your current faction.'
+Commands-Factions-Accept-OnlyJoinPlayerFactions: '&cYou cannot join system factions.'
+Commands-Factions-Accept-FactionFull: '&c{factionName} has the maximum members.'
+Commands-Factions-Accept-NotInvited: '&cYou have not been invited to join {factionName}.'
+Commands-Factions-Accept-FactionJoinBroadcast: '&a{player} &ehas joined the faction.'
+Commands-Factions-Ally-AlliesDisabled: '&cThere are no allies this map.'
+Commands-Factions-Ally-OfficerRequired: '&cNo permission. This command is officer
+  only.'
+Commands-Factions-Ally-RequestingOwnFaction: '&c{relationName} &ccannot be applied
+  to your own faction.'
+Commands-Factions-Ally-OwnFactionLimitReached: '&cYour faction already has the maximum
+  amount of allies.'
+Commands-Factions-Ally-OtherFactionLimitReached: '&c{otherFactionName} &chas reached
+  the maximum ally limit.'
+Commands-Factions-Ally-AlreadyAllied: '&cYour faction already has the &c{relationName}
+  &crelation with &c{otherFactionName}&c.'
+Commands-Factions-Ally-NowAllied: '&eYour faction is now b{relationName} &ewith &f{otherFactionName}&e.'
+Commands-Factions-Ally-AlreadyRequested: '&cYou have already requested to be {relationName}
+  &cwith &c{otherFactionName}&c.'
+Commands-Factions-Ally-RequestSent: '&d{relationName}&e request was sent to &f{otherFactionName}&e.'
+Commands-Factions-Ally-RequestReceived: '&f{otherFactionName} &ehas requested to &d{relationName}&e.
+  Use &6/faction ally {otherFactionName} &eto &aaccept&e the request.'
+Commands-Factions-Announcement-OfficerRequired: '&cNo permission. Only officers can
+  announce.'
+Commands-Factions-Announcement-AlreadyUnset: '&cNo announcement is set.'
+Commands-Factions-Announcement-SameAnnouncement: '&cYour announcement is the same
+  as it was prior.'
+Commands-Factions-Announcement-AnnouncementCleared: '&f{player} &ehas pruned the faction
+  announcement.'
+Commands-Factions-Announcement-BroadcastSwitched: '&6{player} &ehas updated the faction
+  announcement:&f {newAnnouncement}'
+Commands-Factions-Chat-SwitchedMode: '&eYour chat mode was updated to: &f{newMode}&e.'
+Commands-Factions-Claim-NoClaimRaidable: '&CYou can''t claim as your faction is raidable.'
+Commands-Factions-Claim-ClaimWandInvAlready: '&cYou are already in claim mode.'
+Commands-Factions-Claim-SubClaimInInvError: '&cYou cannot have a claiming wand whilst
+  you have a subclaim wand in your inventory.'
+Commands-Factions-Claim-InvFull: '&cInventory full. Please have at least 1 open slot.'
+Commands-Factions-Claim-Added: '&eYou have received a &dclaiming wand&e. If you''d
+  wish to claim the chunk you''re standing in, you could use &f/f claimchunk&e.'
+Commands-Factions-ClaimChunk-NoClaimRaidable: '&cCannot claim chunks whilst raidable.'
+Commands-Factions-ClaimChunk-OfficerRequired: '&CNo permission. You must be an officer
+  to claim land.'
+Commands-Factions-Claims-FactionCannotClaimLand: '&cNo claims found.'
+Commands-Factions-Claims-FactionClaimedNothing: '&c{factionName} has no claimed land.'
+Commands-Factions-Claims-CannotViewNoHome: '&c{factionName} has no homes set.'
+Commands-Factions-Claims-ClaimListHeader: '&6» &eClaims of &b{factionName} &7({claimsAmount}x
+  claims)'
+Commands-Factions-Claims-ClaimListItem: '&6{claimName}'
+Commands-Factions-Create-BlockedName: '&c{factionName} cannot be found.'
+Commands-Factions-Create-MinimumChars: '&cFaction names must be a minimum of {minChars}
+  characters.'
+Commands-Factions-Create-MaximumChars: '&cFaction names cannot be longer than {maxChars}
+  characters.'
+Commands-Factions-Create-MustBeAlphanumeric: '&cFaction names must be alphanumeric.'
+Commands-Factions-Create-NameAlreadyExists: '&cName is already taken. Please try another
+  name.'
+Commands-Factions-Create-AlreadyInFaction: '&cYou are already in a faction. You must
+  leave your current faction to create a new faction.'
+Commands-Factions-Demote-Success: '&f{player} &ehas been demoted from their captain
+  position.'
+Commands-Factions-Deposit-InvalidNumber: '&CInvalid number. Please deposit a positive
+  number.'
+Commands-Factions-Deposit-AmountNotPositive: '&cInvalid number. Please deposit a positive
+  number.'
+Commands-Factions-Deposit-NotEnoughFunds: '&cYou only have &l{currentAmount}&c in
+  your bank balance.'
+Commands-Factions-Deposit-BroadcastDeposit: '&a{player} &ehas deposited &l{amount}&e
+  to the faction balance.'
+Commands-Factions-Disband-CannotDisbandWhileRaidable: '&cYou cannot suspend raidable
+  factions.'
+Commands-Factions-Disband-LeaderRequired: '&cNo permission. You must be the leader
+  to disband a faction.'
+Commands-Factions-Help-PageLessThanOne: '&cPage not found.'
+Commands-Factions-Help-NoMorePages: '&cPage not found.'
+Commands-Factions-Help-Header: |
+  &6&m---*--------------------------------------------*---
+  &6Faction Help &7(Page {currentPageNumber} out of {totalPageCount} pages)
+Commands-Factions-Help-Footer: |2
+
+  &eYou are currently on page &f{currentPageNumber} &eout of a total &f{totalPageCount} pages&e.
+  &6&m---*--------------------------------------------*---
+Commands-Factions-Help-MenuEntry: '&6/f {commandArgument} »&7 {commandDescription}'
+Commands-Factions-List-PageLessThanOne: '&cPage not found. Specify a page with a positive
+  number.'
+Commands-Factions-List-NoMorePages: '&cPage not found. There are no more pages to
+  be viewed.'
+Commands-Factions-List-Header: |
+  &6&m---*------------------------------------------*---
+  &eFaction Top &7(Page {currentPageNumber} out of {totalPageCount} pages)
+Commands-Factions-List-Footer: |
+  &7
+  &eYou are on page &f{currentPageNumber} / {totalPageCount} &epages.
+  &eUse &f/faction list (1 - {totalPageCount})&e to view another page.
+Commands-Factions-List-Item: '&6 &l{IndexID}.&c {factionName} &7(&f{factionMembersOnline}
+  &aonline&7) &7({deathsUntilRaidable} / {MaximumDeathsUntilRaidable} DTR)'
+Commands-Factions-Show-AllyFormat: '&d{allyFactionName} &7({allyFactionMembersOnline}
+  / {allyFactionMembersTotal} &aonline&7)'
+Commands-Factions-Show-MemberFormat: '&e{player}&7[{playerKills}]'
+Commands-Factions-Show-BannerFormat: |
+  &e{factionName} &7({factionMembersOnline} / {factionMembersTotal} &aonline&7) &eHome &6» {homeFormat}
+Commands-Factions-Show-HomeFormat-None: '&cNone'
+Commands-Factions-Show-HomeFormat-Set: '&f{factionHomeX}, {factionHomeZ}'
+Commands-Factions-Show-StatusFormat-Open: Open
+Commands-Factions-Show-StatusFormat-Closed: Closed
+Commands-Factions-Show-AlliesListFormat: '&eAllies &6» &f{alliesList}'
+Commands-Factions-Show-LeaderListFormat: '&eLeader &6»&f {leaderList}'
+Commands-Factions-Show-CaptainsListFormat: '&eCaptains &6»&f {captainsList}'
+Commands-Factions-Show-MembersListFormat: '&eMembers &6»&f {memberList}'
+Commands-Factions-Show-AnnouncementFormat: '&eAnnouncement &6»&f {announcement}'
+Commands-Factions-List-Item: "{IndexID}. {factionName} [{factionMembersOnline}/{factionMembersAll}] [{deathsUntilRaidable}/{MaximumDeathsUntilRaidable} DTR]"
+Commands-Factions-Show-AllyFormat: "{allyFactionName} [{allyFactionMembersOnline}/{allyFactionMembersTotal}]"
+Commands-Factions-Show-MemberFormat: "{player} [{playerKills}]"
+Commands-Factions-Show-BannerFormat: "{factionName}[{factionMembersOnline}/{factionMembersTotal}] Home:{homeFormat} [{factionOpenStatus}]"
+Commands-Factions-Show-HomeFormat-None: "None"
+Commands-Factions-Show-HomeFormat-Set: "{factionHomeX} | {factionHomeZ}"
+Commands-Factions-Show-StatusFormat-Open: "Open"
+Commands-Factions-Show-StatusFormat-Closed: "Closed"
+Commands-Factions-Show-AlliesListFormat: "  Allies: {alliesList}"
+Commands-Factions-Show-LeaderListFormat: "  Leader: {leaderList}"
+Commands-Factions-Show-CoLeadersListFormat: "  Co-Leaders: {coLeadersList}"
+Commands-Factions-Show-CaptainsListFormat: "  Captains: {captainsList}"
+Commands-Factions-Show-MembersListFormat: "  Members: {memberList}"
+Commands-Factions-Show-AnnouncementFormat: "  Announcement: {announcement}"
+Commands-Factions-Show-Lives: "Lives: {lives}"
+Commands-Factions-Show-BannerTwoFormat: |
+  &eBank Balance &6» &f{factionBalance}
+  &eDate of Creation &6» &f{factionFoundedDate}
+  &eDeaths til Raidable &6» &f{factionDeathsUntilRaidable} / {maximumDeathsUntilRaidable}
+Commands-Factions-Show-dtrRegen: '&eRegeneration &6»&f {factionRegenTime}'
+Commands-Lives-Help-PageLessThanOne: '&cPage not found.'
+Commands-Lives-Help-NoMorePages: '&cPage not found.'
+Commands-Lives-Help-Header: '&eLives Help &7({currentPageNumber} / {totalPageCount}
+  pages)'
+Commands-Lives-Help-Footer: |
+  &eYou are on page &f{currentPageNumber} / {totalPageCount} &epages.
+  &eUse &f/lives help (1 - {totalPageCount})&e to view another page.
+Commands-Lives-Help-MenuEntry: '&6/{commandLabel} {commandArgument} »&7 {commandDescription}'
+Commands-PVP-TimerNotActive: '&cYour &bImmunity&c timer is not active.'
+Commands-PVP-TimerDisabled: '&cYou have disabled your &bImmunity&c timer.'
+Commands-PVP-ActiveFor: '&eYour &bImmunity &etimer is active for another &6&l{pvpTimerTimeRemaining}{isPausedText}&e.'
+Commands-PVP-PausedText: ' &eand is currently paused'
+Commands-PVP-Usage: |
+  &e/{commandLabel} enable &6»&f Disable any active PVP protection.
+  &e/{commandLabel} time &6»&f Check remaining time on your PVP protection.
+  &e/lives &6» &fLife/death-ban help and commands.
+Events-PVP-TimerRunning: '&6{player} &ehas their &bImmunity &etimer for another &f{pvpTimerTimeRemaining}&e.'
+Commands-Pay-Usage: '&cUsage: /{commandLabel} <playerName> <amount>'
+Commands-Pay-InvalidNumber: '&cInvalid number.'
+Commands-Pay-NegativeNumber: '&cInvalid number.'
+Commands-Pay-NotEnoughFunds: '&cYou only have &l{playerBalance} &cin your account.'
+Commands-Pay-CannotSendToSelf: '&cYou cannot send money to yourself.'
+Commands-Pay-UnknownPlayer: '&cPlayer not found.'
+Commands-Pay-MoneyReceived: '&6{sender}&e has sent you &6&l{amount}&e.'
+Commands-Pay-MoneyPaid: '&eYou have sent &6&l{amount} &eto &6{receiver}&e.'
+Commands-Economy-Bal-YourBalanceFormat: '&eBalance &6» &f{balance}'
+Commands-Economy-Bal-BalanceOfFormat: Balance of {player}
+Commands-Economy-Bal-ViewBalance: '&eBalance &6» &f{balance}'
+Commands-Economy-Bal-Usage: /{commandLabel} <playerName>
+Commands-Economy-Give-Usage: /{commandLabel} {targetName} {commandArgument} <amount>
+Commands-Economy-Give-Success: |
+  Added {amount} to balance of {targetPlayer}
+  Balance of {targetPlayer} is now {targetBalance}
+Commands-Economy-Take-Usage: /{commandLabel} {targetName} {commandArgument} <amount>
+Commands-Economy-Take-Success: |
+  Taken {amount} to balance of {targetPlayer}
+  Balance of {targetPlayer} is now {targetBalance}
+Commands-Economy-Set-Usage: /{commandLabel} {targetName} {commandArgument} <amount>
+Commands-Economy-Set-Success: Set balance of {targetPlayer} to {amount}
+Event-Conquest-CappingAreaPlayerMessage: '&6[Conquest] &eYou are capturing {captureZoneName}&e.&7
+  ({remainingTime})'
+Event-Conquest-CappingAreaBroadcast: '&6[Conquest] &f{factionName} &egained &f1 pt
+  &efor capturing {captureZoneName}&e. &7({newCapturePoints} / {requiredVictoryPoints})'
+Event-Conquest-WinnerBroadcast: '&6[Conquest] &f{player} &7({playerFactionName}) &ehas
+  captured &6{eventFactionName} &eafter &6{time} &eof up-time.'
+Event-Conquest-PlayerDeathBroadcast: ''
+Event-Koth-ContestAvailable: '&6{eventFaction} &ecan now be contested. &7({timeRemaining})'
+Event-Koth-NowInControl: '&eYou are capturing &6{captureZoneName}&e.'
+Event-Koth-NoLongerInControl: '&eYou are no longer capturing &6{captureZoneName}&e.'
+Event-Koth-ControllingCapture: '&fSomeone &eis attempting to capture &6{eventFaction}&e.
+  &7({timeRemaining})'
+Event-KOTH-WinnerBroadcast: '&f{player} &7({playerFactionName})&e has captured &6{eventFactionName}&e.
+  &7(Uptime - {time})'
+Messages-Bard-Hover: |
+  &eEffect &6»&f {effect} &7(duration - {effectTime})
+  &eEnergy Requirement &6» &f{energyCost}
+Messages-Bard-EnergyChanged: '&eEnergy Level &6» &f{bardEnergy}'
+Messages-Kit-Activated: |
+  &6{kitName} &eclass has been equipped.
+Messages-Kit-Deactivated: '&6{kitName} &eclass has been un-equipped.'
+Messages-Factions-EnterLand: '&eEntering {factionName}&e, Leaving {factionLeft}&e.'
+Messages-FactionChat-Alliance: '{relationColour}(Alliance) {player}: &f{message}'
+Messages-FactionChat-Faction: '{relationColour}(Faction) {player}: &f{message}'
+Commands-Factions-Disband-Raidable: '&cFactions cannot be suspended whilst a faction
+  is raidable.'
+Commands-Factions-Home-TimerActive: '&c{timerName} is currently active, you cannot
+  use the &dTeleport&c variable/cmd.'
+Commands-Factions-Home-NoFactionHomeSet: '&cNo home is set.'
+Commands-Factions-Home-HomeAboveHeightLimit: ''
+Commands-Factions-Home-InEventZone: '&cYou cannot &dTeleport&c in event regions.'
+Commands-Factions-Home-InEnemyClaim: '&cYou cannot &dTeleport&c in enemy claims.'
+Commands-Factions-Home-DisabledInWorld: '&cYou cannot &dTeleport&c in this world.'
+Commands-Factions-Home-Teleporting: '&eYou are teleporting to your &bteam home &ein
+  &6&l{time}&e. Do not move or take damage.'
+Commands-Factions-Invite-PlayersOnlyCMD: Only players can invite to a faction.
+Commands-Factions-Invite-InvalidUsername: '&c{username} is an invalid username.'
+Commands-Factions-Invite-OfficerRequired: '&cNo permission.'
+Commands-Factions-Invite-AlreadyInFaction: '&c{player} is already in your faction'
+Commands-Factions-Invite-NoInviteWhileRaidable: '&cYour faction is raidable, you cannot
+  invite users.'
+Commands-Factions-Invite-AlreadyInvited: '&c{player} has already been invited.'
+Commands-Factions-Invite-InviteReceived: '{relationColour}{sender} &ehas invited you
+  to join {relationColour}{factionName}&e.'
+Commands-Factions-Invite-InviteBroadcast: '{player} &Ehas invited &6{invitee} &eto
+  the faction.'
+Commands-Factions-Invites-PlayersOnlyCMD: Only players can receive invites.
+Commands-Factions-Invites-SentBy: '&ESent by &6{factionName} &7({inviteCount} invites)&E:&f
+  {invites}.'
+Commands-Factions-Invites-SentByNoInvites: '&cYour faction has not invited anyone.'
+Commands-Factions-Invites-Requested: '&eRequested &7({inviteCount} invites)&7:&f {invites}.'
+Commands-Factions-Invites-RequestedNoInvites: No factions have invited you
+Commands-Factions-Kick-PlayerOnlyCMD: Only players can kick from a faction.
+Commands-Factions-Kick-Raidable: '&cCannot execute this action whilst your faction
+  is raidable.'
+Commands-Factions-Kick-NoMemberNamed: '&cYour faction does not have a member called
+  {name}.'
+Commands-Factions-Kick-OfficerRequired: '&cNo permission.'
+Commands-Factions-Kick-CannotKickLeader: '&CNo permission.'
+Commands-Factions-Kick-LeaderRequired: '&cNo permission.'
+Commands-Factions-Kick-Kicked: '&eYou were kicked from the faction by &6{sender}&E.'
+Commands-Factions-Kick-KickedBroadcast: '&6{player} &Ewas kicked from the faction
+  by &6{sender}&e.'
+Commands-Factions-Leader-PlayerOnlyCMD: Only players can set faction leaders.
+Commands-Factions-Leader-LeaderRequired: '&cNo permission.'
+Commands-Factions-Leader-PlayerNotInFaction: '&c{name} not found.'
+Commands-Factions-Leader-AlreadyLeader: '&cYou are already the faction leader.'
+Commands-Factions-Leader-LeaderTransferBroadcast: '&6{previousLeaderName} &ehas transferred
+  ownership rights to &6{newLeaderName}&e.'
+Commands-Factions-Leave-PlayerOnlyCMD: Only players can leave faction.
+Commands-Factions-Leave-CannotLeaveAsLeader: '&eYou cannot leave the faction as a
+  leader. Either use &6/{commandLabel} disband &eor &6/{commandLabel} leader&e.'
+Commands-Factions-Leave-LeaveSuccess: '&eYou have left your faction.'
+Commands-Factions-Leave-LeaveBroadcast: '&6{sender} &ehas left the faction.'
+Commands-Factions-Map-VisualTypeNotFound: '&c{visualType} not found.'
+Commands-Factions-Map-DisabledClaimPillars: '&ePillar visibility has been toggled.'
+Commands-Factions-Open-LeaderRequired: '&CYou are not leader.'
+Commands-Factions-Open-OpenedText: '&aopened'
+Commands-Factions-Open-ClosedText: '&cclosed'
+Commands-Factions-Open-Broadcast: '{player} &ehas {state} &ethe faction to the public.'
+Commands-Factions-Promote-LeaderRequired: '&cNo permission.'
+Commands-Factions-Promote-PlayerNotInFaction: '&cPlayer not found.'
+Commands-Factions-Promote-PromotionTooHigh: '&cPlayer cannot be promoted.'
+Commands-Factions-Promote-Broadcast: '{player}&e has been promoted.'
+Commands-Factions-Rename-BlockedName: '&c{factionName} is blocked.'
+Commands-Factions-Rename-MinimumChars: '&cFaction names must be at least least {minChars}
+  chars.'
+Commands-Factions-Rename-MaximumChars: '&cFaction names cannot be longer than {maxChars}
+  chars.'
+Commands-Factions-Rename-MustBeAlphanumeric: '&cFaction names must be alpha-numeric.'
+Commands-Factions-Rename-NameAlreadyExists: '&CName taken.'
+Commands-Factions-Rename-RenameDelay: '&cYou must wait {factionRenameTimeLeft} to
+  rename your faction.'
+Commands-Factions-SetHome-MaxHeight: ''
+Commands-Factions-SetHome-OfficerRequired: '&cNo permission.'
+Commands-Factions-SetHome-NotInsideHomeTerritory: '&cYou are not in your own territory.'
+Commands-Factions-SetHome-Broadcast: '{player} &Ehas set the faction home.'
+Commands-Factions-Stuck-OverworldOnly: '&cNot in overworld.'
+Commands-Factions-Stuck-TimerRunning: '{timerName} is already active.'
+Commands-Factions-Stuck-Teleporting: '&eTeleport will occur in &6&l{time}&e. This
+  will cancel if you move more than &6{maxBlocksDistance} blocks&e.'
+Commands-Factions-SubclaimHelp-Header: '&6» &eFaction Subclaim Help &7(1 out of 1
+  pages)'
+Commands-Factions-SubclaimHelp-MenuItem: '  &e{commandUsage} &6» &f{commandDescription}'
+Commands-Factions-SubclaimHelp-Footer: |
+  &e/{commandLabel} map subclaim &6» &fShows the faction subclaim map.
+  &7
+  &eYou are currently viewing page &6&l{currentPageNumber} &eout of a total &6&l{totalPageCount} &epages.
+  &eUse &6/lives help [1 - {totalPageCount}]&e to get more help.
+Commands-Factions-SubclaimHelp-UnknownSubcommand: '&CArgument not found.'
+Commands-Factions-Unally-DisabledOnMap: '&CAllies are disabled.'
+Commands-Factions-Unally-OfficerRequired: '&cNo permissions.'
+Commands-Factions-Unally-NoAllies: '&cYour faction has no allies.'
+Commands-Factions-Unally-NotAllied: '&cYour faction is not {allyDisplayName} with
+  {otherFactionName}&c.'
+Commands-Factions-Unally-CouldNotDrop: '&cCould not drop {allyDisplayName} &cwith
+  &c{otherFactionName}&c.'
+Commands-Factions-Unally-PlayerFactionBroadcast: '&EYour faction has dropped its {allyDisplayName}
+  &Ewith {otherFactionName}&e.'
+Commands-Factions-Unally-OtherFactionBroadcast: '{factionName} &ehas dropped their
+  &es{allyDisplayName} &ewith your faction.'
+Commands-Factions-Unclaim-NoClaims: '&cNo claims.'
+Commands-Factions-Unclaim-NoClaimHere: '&cClaim not found.'
+Commands-Factions-Unclaim-ErrorRemoving: '&cPlease contact an administrator.'
+Commands-Factions-Unclaim-RemovedClaims: '&6{player} &ehas removed &6&l{amountOfClaims}x
+  &eclaims.'
+Commands-Factions-Uninvite-OfficerRequired: '&cNo permission.'
+Commands-Factions-Uninvite-ClearedAll: '&eYou have cleared all pending invitations.'
+Commands-Factions-Uninvite-NoPendingInvites: '&c{name} has not been invited.'
+Commands-Factions-Uninvite-Broadcast: '&6{player} &Ehas uninvited &6{name} &esfrom
+  the faction.'
+Commands-Factions-UnsubClaim-LeaderRequired: '&cNo permission.'
+Commands-Factions-UnsubClaim-PleaseUseAltCommand: ''
+Commands-Factions-Withdraw-OfficerRequired: '&cNo permission.'
+Commands-Factions-Withdraw-MustBePositive: '&cInvalid number.'
+Commands-Factions-Withdraw-NotEnoughInFactionBalance: '&eYour faction only has &6&l{currentBalance}&e.'
+Commands-Factions-Withdraw-Broadcast: '&6{player} &ehas withdraw &6&l{amount} &efrom
+  the faction balance.'
+Timer-Combat-CannotJoinFactions: '&cYou cannot join factions while you {timerName}
+  &cis active.'
+Timer-Combat-CannotKick: '&cCannot kick {player} as their {timerName} &cis active.'
+Timer-Combat-CannotLeave: '&cYou cannot leave your faction while your {timerName}
+  &cis running.'
+Timer-Combat-CannotEnter: '&eYou cannot enter {areaName} &ewhile your {timerName}
+  is active. &7({timeLeft} remaining)'
+Timer-Combat-InCombat: '&eYou have engaged in &6Combat&e. You cannot enter spawn and
+  other safe-zones for &6&l40s&e.'
+Timer-EnderPearl-StillInCooldown: '&cYou are on {timerName} &ccooldown for another
+  &l{timeLeft}&c.'
+Timer-EnderPearl-TimeLeft: '&eEnderpearl Cooldown &6» &f{timeLeft}'
+Timer-GApple-ConsumedGApple: '&cYou are on god apple cooldown for another {timeLeft}.'
+Timer-GApple-OnCoolDown: '&cYou still have a {timerName} &ccooldown for another {timeLeft}.'
+Timer-Invincibility-LandClaimedTeleported: '&cThe land was claimed - teleported.'
+Timer-Invincibility-TimerStartedRespawn: '&eYou now have {timerName} &etimer.'
+Timer-Invincibility-IgniteBlocksNotAllowed: '&cYou cannot ignite blocks as your {timerName} &cis active &7[{timeLeft}]'
+Timer-Invincibility-EmptyBucketNotAllowed: '&cYou cannot empty buckets as your {timerName}
+  &ctimer is active.'
+Timer-Invincibility-PickupNotAllowed: '&cYou cannot pick up items as your {timerName}
+  &ctimer is active.'
+Timer-Invincibility-TimerStartedSpawn: '&aYou now have your {timerName} &atimer.'
+Timer-Invincibility-EnterOwnClaim: '&eYou have entered your own claim, your {timerName}
+  &ewas cleared.'
+Timer-Invincibility-CannotEnterFactionLand: '&cYou cannot enter {factionName} &cwhilst
+  your {timerName} &cis still active.'
+Timer-Invincibility-CannotAttackPlayers: '&cYou cannot attack players whist your {timerName}
+  &cis running.'
+Timer-Logout-MovedABlock: '{timerName} &ctimer cancelled.'
+Timer-Logout-TookDamage: '{timerName} &ctimer cancelled.'
+Timer-Logout-AttackedPlayers: '&eLogout was cancelled.'
+Timer-Logout-LoggedOut: '&aYou have been safely logged out.'
+Timer-Logout-DisconnectingIn: '{timerName} &etimer is disconnecting you in &6{timeLeft}'
+Timer-Stuck-MovedTooFar: '&eYou moved more than &6&l{maxMoveDistance} &6blocks&e,
+  {timerName} &ecancelled.'
+Timer-Stuck-TookDamage: '&cYou took damage, {timerName} &ccancelled.'
+Timer-Stuck-NoSafeLocation: '&cUnable to find a safe location, you have been safely
+  logged out.'
+Timer-Stuck-Teleported: '{timerName} &ahas teleported you to the nearest safe area.'
+Timer-Stuck-TeleportingIn: '{timerName} &eis teleporting you in &6{timeLeft}&e.'
+Timer-Teleport-MovedABlock: '&cYou moved a block, therefore cancelling your teleport.'
+Timer-Teleport-TookDamage: '&cYou took damage, therefore cancelling your teleport.'
+Timer-Combat-Name: '&cCombat'
+Timer-Gapple-Name: '&aGapple'
+Timer-Invincibility-Name: '&bInvincibility'
+Timer-Logout-Name: '&9Logout'
+Timer-ClassWarmup-Name: '&eClass Warmup'
+Timer-Stuck-Name: '&dStuck'
+Timer-Teleport-Name: '&dTeleport'
+Timer-Enderpearl-Name: '&9Enderpearl'
+Event-Conquest-CappingArea: '&6[Conquest] &eYou are controlling {captureZoneName}
+  &7({remainingTime})'
+Messages-NoPermission: '&cYou don''t have permission to perform this action.'
+Messages-ConsoleOnly: '&CConsole only command.'
+Event-Death-SwordLore: '&6{date} &e{player} &fwas killed by &e{killer}'
+Event-Death-SkullName: '&eSkull of {player}'
+Interact-Skull-Message: '&eThis skull once belonged to &6{player}&e.'
+Timer-Enderpearl-SBPrefix: '&6&l'
+Timer-Stuck-SBPrefix: '&c&l'
+Timer-Logout-SBPrefix: '&9&l'
+Timer-Combat-SBPrefix: '&4&l'
+Timer-Invincibility-SBPrefix: '&a&l'
+Timer-Teleport-SBPrefix: '&e&l'
+Timer-ClassWarmup-SBPrefix: '&b&l'
+Timer-Gapple-SBPrefix: '&d&l'
+Event-Fury-PlayerDeathBroadcast: ''
+Event-Fury-CappingAreaPlayerMessage: '&6[Fury] &eYou are capturing &c{captureZoneName}&e.
+  &7({remainingTime}s)'
+Event-Fury-WinnerBroadcast: '&c{player} &7({playerFactionName})&e has captured &f{eventFactionName}
+  &eafter &d{time} &eof up-time.'
+Event-Fury-CappingAreaBroadcast: '&6[Fury] &f{factionName} &ehas gained a point for
+  capturing &c{captureZoneName}&e. &7({newCapturePoints}/{requiredVictoryPoints})'
+Event-Fury-CappingArea: '&6[Fury] &eYour faction is capturing &c{captureZoneName}&e.
+  &7({remainingTime}s)'
+Event-Fury-Switched: '&6[Fury] &eCapzone switched. &f{newZone} &eis now active.'
+Commands-Factions-Unclaim-CoLeaderRequired: You must be a faction leader or co-leader to unclaim land.
+Commands-Factions-Rename-CoLeaderRequired: You must be a faction leader or co-leader to edit the name.
+Commands-Factions-Demote-LeaderRequired: You need to be a leader to demote co leaders.
+Comamnds-Factions-Demote-LeaderDemote: "No one can demote the leader!"
+Commands-Factions-Kick-CoLeaderRequired: You must be a faction leader or co-leader to kick captains.
+Messages-FactionChat-Officer: '{relationColour}({channelName}) {player}: {message}'
+Commands-Factions-Demote-LowestRank: '{player} is at the lowest role and cannot be
+  demoted any further.'
+Commands-Factions-Show-CoLeadersListFormat: '  Co-Leaders: {coLeadersList}'
+Commands-Factions-Promote-CoLeaderRequired: You must be a faction leader or co-leader to assign members as a co leaders.
+Commands-Factions-Chat-OfficerOnly: Officer chat channel is restricted to officers and higher ranking members.
+Commands-Factions-Demote-CoLeaderRequired: You need to be a leader or co leader to demote captains.

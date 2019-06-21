@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: technology.brk.staff:Staff:2.0.0-PRE">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/technology/brk/staff/Staff/2.0.0-PRE/Staff-2.0.0-PRE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/technology/brk/staff/Staff/2.0.0-PRE/Staff-2.0.0-PRE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/technology/brk/staff/Staff/2.0.0-PRE/Staff-2.0.0-PRE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,2 @@
+# year, month, day, hour, minute: eventName (24 hour clock)
+# 2017-04-08 12:30=Example < Example format

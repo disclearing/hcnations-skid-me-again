@@ -1,0 +1,8 @@
+name: Base
+version: ${project.version}
+authors: [DoctorDark, SystemUpdate]
+main: technology.brk.base.BasePlugin
+commands:
+  setslots:
+    description: Sets the slots of the server & saves it
+    permission: base.command.setslots

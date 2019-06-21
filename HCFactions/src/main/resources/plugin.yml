@@ -1,0 +1,17 @@
+name: ${project.artifactId}
+version: ${project.version}-b${BUILD_NUMBER}
+authors: [SystemUpdate, DoctorDark]
+main: ${project.groupId}.${project.artifactId}
+depend: [Base, Stats, WorldEdit]
+softdepend: [Staff]
+loadbefore: [Core]
+commands:
+  factions:
+    description: Main factions command
+    aliases: [f, fac, faction, facs]
+  location:
+    description: Check the faction location of a player
+    aliases: [loc, whereami]
+  regen:
+    description: Check ETA until a faction is able to regenerate DTR.
+  focus: {}

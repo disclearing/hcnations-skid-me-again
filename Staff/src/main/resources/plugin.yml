@@ -1,0 +1,40 @@
+name: ${project.artifactId}
+version: ${project.version}-b${BUILD_NUMBER}
+main: ${project.groupId}.${project.artifactId}
+depend: [Base]
+softdepend: [Essentials, IceFyre]
+commands:
+  go:
+    description: Automatically teleport the user to a random player every x time.
+  invsee:
+    description: Opens a player inventory
+  commands:
+    description: Shows the most recent command of the player entered
+  slow:
+    description: Puts the chat in a slow mode, time depends on the time entered.
+    aliases: [slowchat, schat]
+  report:
+    description: Bring the staff to the attention of that player
+    aliases: [viewreports]
+  lock:
+    description: Locks the chat so only people with permission can talk
+    aliases: [lockchat, mutechat, lc, l, mc]
+  clear:
+    description: Clears the chat
+    aliases: [clearchat, cc]
+  freeze:
+    description: Freezes the choosen player
+    aliases: [ss]
+  vanish:
+    description: Makes you invisable to all besides those who have permission to see you
+    aliases: [v, vis, invis]
+  staff:
+    description: Toggles staff mode
+    aliases: [staffmode]
+  confirmclear:
+    description: Confirms the clear of a players inventory.
+  ghostmute: {}
+  staffchat:
+    aliases: [sc, s]
+  staffchattoggle:
+    aliases: [sct, st]

@@ -1,0 +1,156 @@
+// Factions Configuration File
+// This is in a new custom format **NOT YAML**
+// Be sure to double-check your config
+// Credits - Techcable's Configuration API
+
+// If ally damage should be prevented or just warn the attacker.
+preventAllyDamage = true
+
+//Should print out "missing message"
+//Only recommend to use on test server
+//to reduce spam.
+messageDebug = false
+
+// List of faction names that cannot be used.
+disallowedFactionNames = [
+    "EOTW",
+    "KOHI",
+    "ETB"
+]
+
+subclaimSigns {
+    // Protects against members that are not on the sign opening.
+    private = false
+
+    // Protects against any non-officer opening.
+    captain = true
+
+    // Protects against any non-leader opening.
+    leader = false
+
+    // If subclaim protected objects should be protected from hopper
+    // items too, disabling this may increase performance.
+    hopperCheck = true
+}
+
+factions {
+
+    warzone {
+        // The radius of the warzone.
+        radiusOverworld = 800
+        radiusNether = 800
+    }
+
+    spawn {
+        // The radius of the spawn.
+        radiusOverworld = 75
+        radiusNether = 800
+        radiusEnd = 0
+    }
+
+    roads {
+        // If players are allowed to claim next to roads
+        allowClaimsBesides = true
+
+        widthLeft = 7
+        widthRight = 7
+
+        length = 4000
+    }
+
+    endportal {
+        enabled = true
+        radius = 20
+        center = 1000
+    }
+
+    antirotation{
+      // Delay in hours
+      delay = 6
+
+      // If anti rotation is enabled
+      enabled = false
+    }
+
+    home {
+        // The time in seconds to teleport to faction home, -1 to disable, 0 for instant
+        teleportDelay {
+            NETHER = 30
+            THE_END = -1
+            NORMAL = 10
+        }
+
+        // The maximum height to set a faction home, use -1 to ignore this.
+        maxHeight = -1
+
+        // If faction homing in enemy territory should be allowed.
+        allowTeleportingInEnemyTerritory = true
+    }
+
+    // Minimum amount of characters a faction name must be.
+    nameMinCharacters = 3
+
+    // Maximum amount of characters a faction name must be.
+    nameMaxCharacters = 16
+
+    // Maximum amount of members a faction can own.
+    maxMembers = 25
+
+    // Maximum amount of claims a faction can own.
+    maxClaims = 8
+
+    // Maximum amount of allies a faction can have.
+    maxAllies = 1
+
+    dtr {
+        regenFreeze {
+            // The minutes for faction DTR regen freeze to
+            // end not including any multipliers, etc.
+            baseMinutes = 40
+
+            // How much longer the DTR freeze should be for factions with
+            // more members. Set to 0 to disable.
+            minutesPerMember = 2
+        }
+
+        // The minimum DTR a faction can have.
+        minimum = -50
+
+        // The maximum DTR a faction will regenerate to.
+        maximum = 6
+
+        // Time in milliseconds between a DTR update.
+        millisecondsBetweenUpdates = 45000
+
+        // The DTR again when DTR updates.
+        incrementBetweenUpdates = 0.1
+    }
+
+    relationColours {
+        // The nametag and chat colours to show for faction relations.
+        wilderness = "DARK_GREEN"
+        warzone = "LIGHT_PURPLE"
+        teammate = "GREEN"
+        ally = "GOLD"
+        enemy = "RED"
+        road = "YELLOW"
+        safezone = "AQUA"
+    }
+}
+
+data{
+    useMongo = false
+
+    mongo{
+        //Connection information for connecting to mongo
+        address = "127.0.0.1"
+        port = 27017
+
+        //Authorization for connecting
+        username = "core"
+        password = "password"
+
+        //Database to use
+        database = "factions"
+    }
+}

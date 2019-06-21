@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.hcnations:hcfactions:1.2.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/hcnations/hcfactions/1.2.2/hcfactions-1.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/hcnations/hcfactions/1.2.2/hcfactions-1.2.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/hcnations/hcfactions/1.2.2/hcfactions-1.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

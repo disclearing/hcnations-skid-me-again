@@ -1,0 +1,57 @@
+KS-Rewards:
+  '1':
+    Broadcast: "Yes I have started a fucking killstreak!"
+    Commands:
+    - kill {player}
+
+join-items:
+  '0':
+    item: DIAMOND
+    title: "Kit Selector"
+    lore:
+    - This is the match item
+    - it matchs the same match_item
+    - in the kit selector config
+    - and so when clicked, will
+    - open the kit selector
+
+kits:
+  archer:
+    armor:
+      helmet:
+        item: LEATHER_HELMET
+      chestplate:
+        item: LEATHER_CHESTPLATE
+      leggings:
+        item: LEATHER_LEGGINGS
+      boots:
+        item: LEATHER_BOOTS
+    inventory:
+      fill:
+        item: POTION
+        data: 16421
+      items:
+        '0':
+          item: DIAMOND_SWORD
+          enchantments:
+          - DAMAGE_ALL:1
+    kitselector:
+      slot: 0
+      icon:
+        item: LEATHER_HELMET
+        name: "Archer Kit"
+
+selector:
+  title: "Kit Selector"
+  rows: 1
+  match_item:
+    item: DIAMOND
+    title: "Kit Selector"
+    lore:
+    - This is the match item
+    - it matchs the same match_item
+    - in the kit selector config
+    - and so when clicked, will
+    - open the kit selector
+
+

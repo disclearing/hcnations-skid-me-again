@@ -1,0 +1,15 @@
+# Every number under broadcast will be broadcasted when the mountain reaches that percentage of blocks left.
+# The default example will broadcast when 50% of blocks remain.
+deplete-broadcast:
+  50: "&c50% of glowstone remain in the mountain!"
+
+# Same principles apply as above except in seconds.
+# Example below will broadcast 15 minutes before the mountain is reset.
+reset-broadcast:
+  900: "&c15 minutes remain before the mountain resets."
+
+# Interval for when the mountain resets in seocnds.
+interval: 900
+
+# The blocks inside of the mountain. By default, this is glowstone.
+material: GLOWSTONE

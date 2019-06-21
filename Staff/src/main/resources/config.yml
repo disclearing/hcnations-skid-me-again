@@ -1,0 +1,121 @@
+clearchat:
+  lines: 300
+  ignore_frozen: false
+  fool_tabbychat: true
+
+freeze:
+  inventory:
+    name: "You are frozen!"
+    rows: 1
+    items:
+      '0':
+        item: DIRT
+        amount: 1
+        name: "Loser!"
+        lore:
+        - "Get your ass in ts.hcgames.org"
+    fill:
+      item: DIRT
+      amount: 1
+      name: "Loser!"
+      lore:
+      - "Get your ass in ts.hcgames.org"
+  allowed_commands:
+    - msg
+
+invsee:
+  title: "Inventory of {player}"
+  confirmclear_expiretime: 60
+  emptyarmoritem:
+    item: IRON_FENCE
+    name: ""
+    lore: []
+  clearinventoryitem:
+    item: BOOK_AND_QUILL
+    name: "Clear Inventory"
+    lore:
+    - "This will clear the players inventory"
+  healthitem:
+    item: INK_SACK
+    data: 1
+    name: "Health"
+    lore: []
+  potioneffectitem:
+    item: BLAZE_POWDER
+    name: "Player Potion Effects"
+    lore: []
+
+CommandsLog:
+  Max-Per-Page: 5
+#Set to -1 to disable
+Go:
+  Maximum-Time: 2000
+StaffMode:
+  InvSee:
+    Item: BOOK
+    Amount: 1
+    Name: "Inv See"
+    Lore:
+    - "Right click a player to open their inventory"
+  RandomPlayer:
+    Item: INK_SACK
+    Amount: 1
+    Data: 12
+    Name: "Teleport to random player"
+    Lore: []
+  Compass:
+    Item: COMPASS
+    Amount: 1
+    Name: ""
+    Lore: []
+  StaffOnline:
+    Item: SKULL_ITEM
+    Data: 3
+    Amount: 1
+    Name: "Staff Online"
+    Lore: []
+  Reports:
+    Item: IRON_FENCE
+    Amount: 1
+    Name: "View Available Reports"
+    Lore: []
+  Vanish:
+    Item: FEATHER
+    Amount: 1
+    Name: "Toggle Vanish"
+    Lore: []
+  Pickaxe:
+    Item: DIAMOND_PICKAXE
+    Amount: 1
+    Name: "Random TP (Below 30)"
+    Lore: []
+Reports:
+  Cooldown-Time: 120
+  Inventory:
+    Name: "Reports (Page #{pageNumber})"
+  Active-Button:
+    Item: INK_SACK
+    Data: 10
+    Amount: 1
+    Name: "Next Page"
+    Lore: []
+  Inactive-Button:
+    Item: INK_SACK
+    Data: 8
+    Amount: 1
+    Name: " "
+    Lore: []
+  #Valid Stuff: {report-id}, {player}, {reporter} and {reason}
+  ReportItem:
+    Item: BOOK_AND_QUILL
+    Amount: 1
+    Name: "Report by {player} (#{report-id})"
+    Lore:
+    - "Reporter: {reporter}"
+    - "Player: {player}"
+    - "Reason: {reason}"
+  Clear-Button:
+    Item: COOKIE
+    Amount: 1
+    Name: "Clear Reports"
+    Lore: []

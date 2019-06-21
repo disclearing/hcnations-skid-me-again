@@ -1,0 +1,313 @@
+Error-Messages:
+  PlayerOnly: "&cThis command can only be issued by a player."
+  NoPermission: "&cYou don't have permission to execuate this command."
+  InvalidPlayer: "&6Player '{player}' not found."
+  NotInFaction: "&cYou are not in a faction."
+  InvalidNumber: "&c'{number}' is an invalid number."
+  MustBePositive: "{number} must be positive."
+  InvalidFaction: "Faction '{faction}' not found."
+Commands:
+  Gopple:
+    Timer-Inactive: "&cYour {timerName} &cis currently not active."
+    Timer-Active: "&eYour {timerName} &eis active for another &l{timerTimeLeft}&e."
+  Location:
+    Usage: "&cUsage: /{commandLabel} [playerName]"
+    Output: "&e{player} is in the territory of {factionName} &e({isDeathBanLocation}&e)"
+    Deathban: "&cDeathban"
+    NonDeathban: "&aNon-Deathban"
+  Logout:
+    Timer-AlreadyActive: "&cYour {timerName} &cis already active."
+    Timer-Started: "&cYour {timerName} &ctimer has started."
+  Regen:
+    Full: "&cYour faction currently has full DTR."
+    Paused: "&9Your faction is currently on DTR freeze for another &r{dtrFreezeTimeLeft}&9."
+    Regenerating: "&9Your faction currently has &e{regenSymbol}{factionDeathsUntilRaidable} &9DTR and is regenerating at a rate &6{factionDTRIncrement} every &6{factionDTRIncrementWords}&9. Your ETA for maximum DTR is &d{factionDTRETA}&9."
+    Unknown: "&cUnrecognised regen status, please inform an Administrator."
+  ServerTime:
+    Output: "&aThe server time is &5{serverTime}&a."
+  SpawnCannon:
+    Usage: "&cUsage: /{commandLabel} <launch|aim [x z])>"
+    Overworld-Only: "&rYou can only use the spawn cannon in the overworld."
+    Not-On-Spawn-Cannon: "&rYou are not on a spawn cannon (&b{spawnCannonBlock}&r)."
+    SafeZone-Only: "&cYou can only use the spawn cannon in safe-zones."
+    Aim:
+      NoPermission: "&cYou do not have access to aim the spawn cannon."
+      Usage: "&cUsage: /{commandLabel} {commandArgument} <x> <z>"
+      InvalidCoords: "&cYour x or z co-ordinate was invalid."
+    Launch-NoPermission: "&cYou do not have access to launch with the spawn cannon."
+    WarzoneOnly: "&cYou can only cannon to areas in the Warzone."
+    Error-MaxDistance: "&cYou cannot launch that far from the spawn cannon. Your limit is {maxCannonDistance}"
+    Cannoning: "&eCannoning to &a{x}&e, &a{z}&e."
+    SOTW-Paused-Disabled: "&cSpawn cannon is disabled while sotw is paused."
+  Sidebar:
+    Enabled: "&eScoreboard sidebar is &anow &evisable."
+    Disabled: "&eSocreboard sidebar is &cno &elonger visable."
+  CoreVersion:
+    CurrentVersion: "&eRunning version &6{version}&e (Build: &6{build}&e)"
+    OutdatedVersion: "&eYou are &6{builds} &ebuild{s} behind the latest."
+    LatestVersion: "&eYou are up to date."
+  PvPTimer:
+    Timer:
+      NotActive: "&eYour &6{timerName} &etimer is currently not active."
+      Disabled: "&eYour &6{timerName} &eis now off."
+    Active:
+      Output: "&eYour &6{timerName} &eis now active for another &6{timerTimeRemaining}&e{isPausedText}&e."
+      Paused: " and is currently paused"
+    Usage: |
+      &e*** &6{timerName} Timer Help &e***
+      &e/{commandLabel} enable &6- &eRemoves your {pvpTimerName} timer.
+      &e/{commandLabel} time &6- &eCheck remaining {pvpTimerName} time.
+      &e/lives &6- &eLife & deathban related commands.
+  Revive:
+    Usage: "&eUsage: &6/{commandLabel} <playerName>"
+    Not-DeathBanned: "&6{player} &eis not death banned."
+    Revived: "&eStaff revived {target}"
+  Lives:
+    Subcommand:
+      Check:
+        Usage: "/{commandLabel} {subCommandLabel} [playerName]"
+        Output: "&eYou have &6{livesAmount} &elive{s}&6."
+        Output-Other: "&6{target} &ehas &6{livesAmount} &elive{s}."
+      CheckDeathBan:
+        Usage: "/{commandLabel} {subCommandLabel} [playerName]"
+        NotDeathBanned:
+          Output: "&eYou are not deathbanned."
+          Output-Other: "&6{target} &eis not deathbanned."
+        Output:
+          Header: "&eDeathban cause of &6{target}"
+          Time: "&eTime: &6{deathBanTime}"
+          Duration: "&eDuration: &6{deathBanDuration}"
+          Location: "&eLocation: (&6{deathBanLocationX}&e, &6{deathBanLocationY}&e, &6{deathBanLocationZ}&e) - [&6{deathBanLocationWorld}&e]"
+          Reason: "&eReason: [&6{deathBanReason}&e]"
+      ClearDeathBans:
+        Output: "&eAll death-bans have been cleared."
+    Usage: "&eUsage: &6{commandUsage}"
+    Unknown-Subcommand: "&eSubcommand &6{subCommand}&e for command &6{commandLabel} &edoesn't exist!"
+  SOTW:
+    Subcommand:
+      SetTime:
+        Usage: "/{commandLabel} {commandArgument} <time>"
+        Invalid-Duration: "'{duration}' is an invalid duration."
+        Duration-Too-Small: "Time must be at least 1 second. (20 ticks)"
+        Set: "SOTW time set to {duration}."
+      End:
+        Usage: "/{commandLabel} {commandArgument}"
+        NotRunning: "SOTW is not running."
+        Ended: "Forcibly ended SOTW."
+      Toggle:
+        Usage: "/{commandLabel} {commandArgument} <pause | resume>"
+      Pause:
+        Already-Paused: "SOTW is already paused."
+        Not-Running: "SOTW is not running."
+        Paused: "SOTW has been paused."
+      Resume:
+        Not-Paused: "SOTW isn't paused."
+        Already-Running: "SOTW is already running."
+        Resumed: "SOTW is no longer paused."
+    Usage: "Usage: {usage}"
+    Unknown-Subcommand: "&eSubcommand &6{subCommand}&e for command &6{commandLabel} &edoesn't exist!"
+  NightVision:
+    Enabled: "&eNight vision has been &aenabled&e."
+    Disabled: "&eNight vision has been &cdisabled&e."
+  PlayerTime:
+    Invalid-Usage: "&cUsage: /{commandLabel} <player>"
+    Output: "{player}'s play time is {time}."
+    Error:
+      Missing-File: "Player hasn't played before or no stats have been tracked."
+      No-Time-Recorded: "Player time hasn't been recorded for {player}."
+  ToggleEnd:
+    Opened: "End is now open."
+    Closed: "End is now closed."
+  Economy:
+    Pay:
+      Invalid-Usage: "Invalid Usage: /pay <username> <amount>"
+      Not-Enough-Funds: "You don't have enough funds to pay {player}"
+      Payed: "You have paid {player} {amount}"
+      Received: "{player} has paid you {amount}"
+    Balance:
+      Console-Usage: "Player required: /balance <username>"
+      Display:
+        Yours: "You balance is ${balance}"
+        Others: "Balance of {player} is ${balance}"
+  List:
+    Max: "There are more then 100 players online so only the first 100 where shown"
+    Online: "There are {online} players out of a max of {maxPlayers}"
+  Ores:
+    Own: "Your ores:"
+    Other: "Ores of {player}"
+  Factions:
+    Join:
+      Rotation-Pending: "&cYou cannot join the faction as you are on a 24 hour cooldown period. Please wait {time} to join."
+    Lives:
+      Usage: "&cUsage: /f lives <deposit|withdraw> <amount>"
+      Deposit:
+        Not-Enough: "You don't have {amount} lives to desposit."
+        Broadcast: "{player} has deposited {amount} live{s} into the faction."
+      Withdraw:
+        Officer-Required: "You must be a officer or higher to withdraw lives."
+        Not-Enough: "You faction doesn't have {amount} live{s}."
+        Withdrew: "You have withdrew a {amount} live{s}."
+    Subcommand:
+      Stuck:
+        SOTW-Paused-Disabled: "&cStuck command is disabled while sotw is paused."
+      Rename:
+        Renamed: "You have renamed {oldFactionName} to {factionName}"
+    Revive:
+      Usage: "&cUsage: /f revive <player>"
+      Officer-Required: "You must be a officer or higher to use lives."
+      Not-Enough: "The faction does not have enough lives to revive {player}."
+      Not-Deathbanned: "{player} is not deathbanned."
+      Broadcast: "{player} has used 1 faction life to revive {victim}"
+    Focus:
+      Usage: "&cUsage: /f focus <player | faction>"
+      Error:
+        NotFound: "Player or faction with name {name} not found."
+        NotPlayerFaction: "Faction with {name} isn't a player faction."
+      Focus:
+        Player: "{player} has focused on player {focusedPlayer}"
+        Faction: "{player} has focused on faction {focusedFaction}"
+      UnFocus:
+        Player: "{player} has unfocused on player {focusedPlayer}"
+        Faction: "{player} has unfocused on faction {focusedFaction}"
+    RemoveCooldown:
+      Usage: "/f removecooldown <player> <faction>"
+      InvalidFactionType: "{faction} is not a player faction."
+      NotOnCooldown: "{player} does not have an active cool down."
+      CooldownRemoved: "Cool down on {player} for {faction} removed."
+  Filter:
+    Invalid-Usage: "/filter <add|remove|list> [block]"
+    Invalid-Item: "Invalid item {item}"
+    Add:
+      Usage: "/filter add <block>"
+      Added: "Added {item} to the block list."
+      Already-Added: "{item} is already filtered."
+    Remove:
+      Usage: "/filter remove <block>"
+      Removed: "Removed {item} from the block list."
+      Does-Not-Exist: "{item} isn't in your block list."
+    List:
+      Items: "Filtered blocks: {items}"
+      Spacer: "&7, &d"
+      No-Blocks: "Your block filter is empty."
+  Panic:
+    User:
+      Entered: "You have entered a panic state."
+      Left: "You have left your panic state."
+      Frozen: "You are not in a panic state."
+      Cooldown: "You are in a panic state and must wait before you can disable it! ({time})"
+    Staff:
+      Entered: "{player} has entered a panic state!"
+      Left: "{player} has disabled their panic state!"
+  Inv:
+    Usage: "/inv <player>"
+    No-State: "No last inventory of {player} found."
+    Restored:
+      Staff: "You have restored {player}'s inventory."
+      User: "{player} has restored your inventory."
+    Pending:
+      Enabled: "{player}'s inventory will be restored when they next login."
+      Disabled: "{player}'s inventory will no longer be restored when they next login."
+  ReloadHelp: "Help has been reloaded."
+  Glint:
+    Enabled: "You have enabled glint."
+    Disabled: "You have disabled glint."
+  Loadout:
+    Error:
+      Usage: "&c/loadout <player>"
+      Not-Set: "Loadout isn't set, set it with /setloadout"
+    Set: "You have updated the loadout."
+    Given: "You have given the loadout to {player}."
+  Request:
+    Usage: "/{commandLabel} <message>"
+    Cooldown: "You must wait {time} before you can use this command again."
+    Sent: "Your message has been forwarded on to our staff team and one will provide assistance shortly."
+    Received: "{player} has requested help! (Message: {message})"
+Inventory-Names:
+  MapKit: "Map {mapNumber} Kit"
+Broadcast:
+  SOTW-End: |
+    THE START OF THE WORLD HAS
+    ENDED - NO MORE IMMUNITY
+  Player-Revived: "&eStaff revived {target}"
+  Deathbans-Cleared: "&eAll death-bans have been cleared."
+PvPClass:
+  Archer:
+    Minimum-Force-Not-Met: "&cMark not applied as arrow was shot with less than {archerMinimumForce}% force."
+    Archer:
+      Marked: "&eYou have an archer mark on &6{player}&e, this will expire in &6{time}&e."
+      Expired: "&eNo longer have a mark on &6{player}&e."
+    Marked:
+      Marked: "&6{player}&e has marked you."
+      Expired: "&6{player}&e's mark on you has expired."
+    Speed-Cooldown: "&eCannot use archer speed for another &6{speedCoolDownRemaining}&e."
+Broadcasts:
+  Faction:
+    Create: "Faction {factionName} has been created by {player}"
+    Disband: "Faction {factionName} has been disbanded by {player}"
+  CoreOutdated: |
+    &e[&6Core&e] &6You are running an outdated core.
+    &eYou are &6{builds}&e{s} behind the latest.
+  Elite: |
+    Elite: {eliteUsers}
+    &7You can buy this rank at donate.hcgames.org
+  FoundDiamonds: "[FD] {player} has found {amount} diamond{s}."
+EndEvent:
+  Only-Start-In-End-Environments: "&cThe end event can only be started in end environments!"
+  Successfully-Started: "&aThe end event has been started successfully."
+  Dragon-Spawned: "&c&lEnderdragon spawned!"
+  Already-Active: "&cThere is already an end event running!"
+  Not-Active: "&cThere is not an end event running!"
+  Successfully-Cancelled: "&aThe end event has been cancelled successfully."
+  Dragon-Killed: "&a&lEnderdragon killed by &6{player}&a&l from faction &6{faction}&a&l."
+Spawner-Placed: "&eYou have placed a &6{mob} &espawner!"
+scoreboard:
+  format:
+    header: "&f&7&m---------------------"
+    footer: "&f&7&m-----------------"
+  sotw:
+    active: "SOTW: {remaining}"
+    paused: "SOTW: {time}\nPaused"
+  eotw:
+    starts: "EOTW Starts: {remaining}"
+    cappable: "EOTW Cappable: {cappable}"
+  classes:
+    active: "Active Class: {class}"
+    bard:
+      energy: "Energy: {energy}"
+      buffDelay: "Delay: {buffDelay}"
+    archer:
+      target: "Target: {target}\nRemaining: {remaining}"
+      marked: "Marked: {archer}\nExpires: {expires}"
+      effects:
+        speed: "Speed buff: {remaining}"
+        jump: "Jump buff: {remaining}"
+  events:
+    koth: "{name}: {remaining}"
+    fury:
+      header: "Fury Event\nCapzone: {capzone}\nRemaining: {remaining}\nSwitch: {switchremaining}"
+      entry: "{count}. {name}: {points} {diff}"
+      diff:
+        positive: "&a({diff})"
+        negative: "&c({diff})"
+    conquest:
+      header: "Conquest\n{redRemaining} | {yellowRemaining}\n{greenRemaining} | {blueRemaining}"
+      entry: "{count}. {name}: {points} {diff}"
+      diff:
+        positive: "&a({diff})"
+        negative: "&c({diff})"
+  timer: "{prefix}{name}: {remaining}"
+  stats:
+  - Player Stats
+  - Kills: {0}
+  - Deaths: {1}
+  staff:
+    chat:
+      locked: "Chat: Locked"
+      slowed: "Chat: Slowed ({time}s)"
+    vanish:
+      on: "Vanish: On"
+      off: "Vanish: Off"
+classes:
+  archer:
+    max-equip: "There is already the maximum allowed archers for this class in your faction. Please choose a different class."
+    max-join: "You cannot join this faction with this class equipped as the faction is at its limit."
